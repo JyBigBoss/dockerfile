@@ -26,6 +26,7 @@ RUN set -ex \
            tar \
            wget \
            curl \
+		   gd-dev \
     && echo "${TIMEZONE}" > /etc/TZ \
     && ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
     # Network fix
